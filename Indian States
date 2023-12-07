@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian States Information</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Indian States Information</h1>
+
+    <table>
+        <tr>
+            <th>State</th>
+            <th>Code</th>
+            <th>Capital</th>
+            <th>Largest City</th>
+            <th>Official Languages</th>
+        </tr>
+        <!-- Add rows dynamically using JavaScript -->
+    </table>
+
+    <script>
+        const statesData = [
+            { state: 'Andhra Pradesh', code: 'AP', capital: 'Amaravati', largestCity: 'Visakhapatnam', languages: 'Telugu' },
+            { state: 'Arunachal Pradesh', code: 'AR', capital: 'Itanagar', languages: 'English' },
+        { state: 'Assam', code: 'AS', capital: 'Dispur', largestCity: 'Guwahati', languages: 'Assamese, Boro' },
+        { state: 'Bihar', code: 'BR', capital: 'Patna', languages: 'Hindi' },
+        { state: 'Chhattisgarh', code: 'CG', capital: 'Raipur', languages: 'Hindi' },
+        { state: 'Goa', code: 'GA', capital: 'Panaji', largestCity: 'Vasco da Gama', languages: 'Konkani' },
+        { state: 'Gujarat', code: 'GJ', capital: 'Gandhinagar', largestCity: 'Ahmedabad', languages: 'Gujarati, Hindi' },
+        { state: 'Haryana', code: 'HR', capital: 'Chandigarh', largestCity: 'Faridabad', languages: 'Hindi' },
+        { state: 'Himachal Pradesh', code: 'HP', capital: 'Shimla (Summer)', largestCity: 'Dharamshala (Winter)', languages: 'Hindi' },
+        { state: 'Jharkhand', code: 'JH', capital: 'Ranchi', largestCity: 'Jamshedpur', languages: 'Hindi' },
+        { state: 'Karnataka', code: 'KA', capital: 'Bangalore', languages: 'Kannada' },
+        { state: 'Kerala', code: 'KL', capital: 'Thiruvananthapuram', languages: 'Malayalam' },
+        { state: 'Madhya Pradesh', code: 'MP', capital: 'Bhopal', largestCity: 'Indore', languages: 'Hindi' },
+        { state: 'Maharashtra', code: 'MH', capital: 'Mumbai (Summer)', largestCity: 'Nagpur (Winter)', languages: 'Marathi' },
+        { state: 'Manipur', code: 'MN', capital: 'Imphal', languages: 'Meitei' },
+        { state: 'Meghalaya', code: 'ML', capital: 'Shillong', languages: 'English' },
+        { state: 'Mizoram', code: 'MZ', capital: 'Aizawl', languages: 'Mizo, English' },
+        { state: 'Nagaland', code: 'NL', capital: 'Kohima', largestCity: 'Dimapur', languages: 'English' },
+        { state: 'Odisha', code: 'OD', capital: 'Bhubaneswar', languages: 'Odia' },
+        { state: 'Punjab', code: 'PB', capital: 'Chandigarh', largestCity: 'Ludhiana', languages: 'Punjabi' },
+        { state: 'Rajasthan', code: 'RJ', capital: 'Jaipur', languages: 'Hindi' },
+        { state: 'Sikkim', code: 'SK', capital: 'Gangtok', languages: 'Nepali, Sikkimese, Lepcha, English' },
+        { state: 'Tamil Nadu', code: 'TN', capital: 'Chennai', languages: 'Tamil' },
+        { state: 'Telangana', code: 'TS', capital: 'Hyderabad (b)', languages: 'Telugu' },
+        { state: 'Tripura', code: 'TR', capital: 'Agartala', languages: 'Bengali, English, Kokborok' },
+        { state: 'Uttar Pradesh', code: 'UP', capital: 'Lucknow', languages: 'Hindi' },
+        { state: 'Uttarakhand', code: 'UK', capital: 'Bhararisain (Summer)', largestCity: 'Dehradun (Winter)', languages: 'Hindi' },
+        { state: 'West Bengal', code: 'WB', capital: 'Kolkata', languages: 'Bengali, English' },
+        ];
+
+        const table = document.querySelector('table');
+
+        statesData.forEach(state => {
+            const row = table.insertRow(-1);
+            const cell1 = row.insertCell(0);
+            const cell2 = row.insertCell(1);
+            const cell3 = row.insertCell(2);
+            const cell4 = row.insertCell(3);
+            const cell5 = row.insertCell(4);
+
+            cell1.textContent = state.state;
+            cell2.textContent = state.code;
+            cell3.textContent = state.capital;
+            cell4.textContent = state.largestCity;
+            cell5.textContent = state.languages;
+        });
+    </script>
+</body>
+</html>
