@@ -36,7 +36,7 @@
             <th>Largest City</th>
             <th>Official Languages</th>
         </tr>
-        <!-- Add rows dynamically using JavaScript -->
+        <!-- Added rows dynamically using JavaScript -->
     </table>
 
     <script>
