@@ -1,7 +1,9 @@
 **Indian States Information**
 This HTML document provides information about various states in India, including their state codes, capitals, largest cities, and official languages. The data is displayed in a table format, making it easy to read and comprehend.
 
-Table Structure
+https://ragun11.github.io/Indian-States/
+
+**Table Structure**
 The table has the following columns:
 
 - The name of the Indian state.
@@ -10,7 +12,7 @@ The table has the following columns:
 - The largest city within the state (if applicable).
 - The official languages spoken in the state.
 
-Styling
+**Styling**
 The table is styled for clarity, with distinct borders and background colors for header cells. The document is responsive, adapting to different screen sizes for optimal viewing.
 
 JavaScript Data
